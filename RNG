@@ -1,0 +1,54 @@
+<html>
+<head>
+	<title>SpiderK's JS RNG
+	</title>
+</head>
+<body>
+
+<h1>SpiderK's JS RNG</h1>
+
+<p id="Results"></p>
+
+<button style="height:200px;width:200px" onClick="oneToHundred()">1-100
+</button>
+<button style="height:200px;width:200px" onClick="yesOrNo()">Yes or No
+</button>
+<button style="height:200px;width:200px" onClick="coinToss">Heads or Tails
+</button>
+<button style="height:200px;width:200px" onClick="lottery()">Lottery
+</button>
+
+<script>
+
+function oneToHundred() {
+	alert(Math.floor(Math.random()*100)
+		);
+}
+
+function yesOrNo() {
+	if (Math.random()*10<=5) {
+		alert("Yes")
+	}
+	else {
+		alert("No")
+	}
+}
+
+function coinToss() {
+	if (Math.random()*10<=5) {
+		alert("Tails")
+	}
+	else {
+		alert("Heads")
+	}
+}
+
+function lottery() {
+	alert("In Progress"
+		)
+}
+
+</script>
+
+</body>
+</html>
